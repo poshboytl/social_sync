@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  hash_tag: MyString
+  sync_all: false
+
+two:
+  name: MyString
+  hash_tag: MyString
+  sync_all: false

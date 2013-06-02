@@ -1,0 +1,19 @@
+<% if current_user %>
+  <% if current_user.twitter_auth %>
+    "Twitter 已经连接"
+  <% else %>
+    <%= link_to '登陆Twitter','/auth/twitter' %>
+  <% end %>
+
+
+  <% if current_user.weibo_auth %>
+    "Weibo 已经连接"
+  <% else %>
+    <%= link_to '登陆Weibo','/auth/weibo' %>
+  <% end %>
+<% else %>
+  <%= link_to '登陆Twitter','/auth/twitter' %>
+  <%= link_to '登陆微博','/auth/weibo' %>
+<% end %>
+
+
